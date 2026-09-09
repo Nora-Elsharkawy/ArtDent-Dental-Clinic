@@ -1,0 +1,254 @@
+.appoint-page {
+    margin-top:50px;
+    padding: 90px 0;
+    background-color: white;
+}
+
+.appoint-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.appoint-subtitle {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--main-color);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.appoint-heading h1 {
+    color: var(--dark-color);
+    margin: 0 0 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 53px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.appoint-heading h1 span {
+    color: var(--main-color);
+}
+
+.appoint-heading p {
+    color: #777;
+    max-width: 600px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.appoint-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.appoint-info {
+    position: relative;
+    padding: 35px 0;
+}
+
+.info-number {
+    display: block;
+    color: var(--main-color);
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.appoint-info h2 {
+    color: var(--dark-color);
+    max-width: 420px;
+    margin: 0 0 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.appoint-info h2 span {
+    color: var(--main-color);
+}
+
+.appoint-info>p {
+    color: #777;
+    max-width: 430px;
+    margin: 0 0 40px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.appoint-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appoint-feature {
+    background-color: var(--section-background);
+    border-radius: 8px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: var(--main-duration);
+}
+
+.appoint-feature:hover {
+    transform: translateX(5px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--section-background);
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.feature-icon i {
+    font-size: 17px;
+}
+
+.appoint-feature h3 {
+    color: var(--dark-color);
+    margin: 0 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.appoint-feature p {
+    color: #888;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.appoint-form-wrapper {
+    background-color: var(--section-background);
+    border-radius: 10px;
+    padding: 45px;
+}
+
+.form-title {
+    margin-bottom: 35px;
+}
+
+.form-title span {
+    display: block;
+    color: var(--main-color);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.form-title h2 {
+    color: var(--dark-color);
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.appoint-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: var(--dark-color);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background-color: white;
+    color: var(--dark-color);
+    border: 1px solid #e4e0dd;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    padding: 14px 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    transition: var(--main-duration);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--main-color);
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.appoint-submit {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--main-duration);
+}
+
+.appoint-submit:hover {
+    background-color: var(--dark-color);
+}
+
+.appoint-submit i {
+    font-size: 16px;
+    transition: var(--main-duration);
+}
+
+.appoint-submit:hover i {
+    transform: translateY(-5px);
+}
+
+

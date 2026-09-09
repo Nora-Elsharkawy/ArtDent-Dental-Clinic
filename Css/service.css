@@ -1,0 +1,337 @@
+/* =====================================================
+   SERVICES PAGE STYLES
+===================================================== */
+
+.serv-hero {
+    padding: 100px 0;
+    background-color: var(--section-background);
+}
+
+.serv-hero-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 70px;
+}
+
+.serv-hero-text {
+    position: relative;
+}
+
+.section-label {
+    color: var(--main-color);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.serv-number {
+    color: rgba(62, 39, 35, 0.18);
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.serv-hero h1 {
+    font-size: 68px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.serv-hero h1 span {
+    display: block;
+    color: var(--main-color);
+}
+
+.serv-hero-text p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 540px;
+    margin-bottom: 35px;
+}
+
+.serv-main-btn {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+    padding: 15px 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    transition: var(--main-duration);
+}
+
+.serv-main-btn:hover {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+}
+
+.serv-main-btn i {
+    transition: var(--main-duration);
+}
+
+.serv-main-btn:hover i {
+    transform: translateX(5px);
+}
+
+.serv-hero-img {
+    position: relative;
+    height: 530px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.serv-hero-img::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to top, rgba(62, 39, 35, 0.35), transparent 45%);
+    inset: 0;
+    pointer-events: none;
+}
+
+.serv-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.serv-hero-img:hover img {
+    transform: scale(1.04);
+}
+
+.serv-img-badge {
+    background-color: rgba(255, 255, 255, 0.94);
+    position: absolute;
+    z-index: 2;
+    left: 25px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    padding: 15px 18px;
+    border-radius: 8px;
+}
+
+.serv-img-badge > i {
+    background-color: var(--main-color);
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.serv-img-badge strong {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.serv-img-badge span {
+    color: var(--text-color);
+    font-size: 10px;
+}
+
+/* Serv Intro */
+.serv-intro {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.serv-intro-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.serv-intro-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 25px;
+}
+
+.serv-intro-content h2 span {
+    color: var(--main-color);
+}
+
+.serv-intro-content p {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 750px;
+    margin: 0 auto 12px;
+}
+
+/* Serv Treatment */
+.serv-treatment {
+    padding: 100px 0;
+    background-color: var(--section-background);
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.treatment-card {
+    background-color: var(--white-color);
+    position: relative;
+    border-radius: 10px;
+    padding: 30px 25px;
+    overflow: hidden;
+    transition: var(--main-duration);
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+}
+
+.treatment-card > span {
+    color: rgba(62, 39, 35, 0.18);
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+
+.treatment-card > i {
+    background-color: var(--section-background);
+    color: var(--main-color);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.treatment-card h3 {
+    color: var(--dark-color);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 12px;
+}
+
+.treatment-card p {
+    color: var(--text-color);
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Serv Benefits */
+.serv-bnft {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.bnft-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    align-items: center;
+}
+
+.bnft-img {
+    position: relative;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bnft-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.bnft-img:hover img {
+    transform: scale(1.04);
+}
+
+.bnft-img > span {
+    background-color: var(--white-color);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bnft-text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.bnft-text h2 span {
+    display: block;
+    color: var(--main-color);
+}
+
+.bnft-text > p {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0 0 25px;
+}
+
+.bnft-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(62, 39, 35, 0.1);
+}
+
+.bnft-item i {
+    background-color: var(--section-background);
+    color: var(--main-color);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.bnft-item span {
+    font-size: 12px;
+}
+

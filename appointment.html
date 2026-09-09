@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Art Dent Clinic offers professional dental care, teeth whitening, pediatric dentistry, and implants.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+
+    <!--Render all elments Normally-->
+    <link rel="stylesheet" href="Css/normalize.css">
+    <!--Main template CSS File-->
+    <link rel="stylesheet" href="Css/homepage.css">
+    <link rel="stylesheet" href="Css/appointment.css">
+    <!--Media Query For accessability-->
+    <link rel="stylesheet" href="Css/mediaquery.css">
+    <!--Font Awesome Library-->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!--Icond Tab-->
+    <link rel="icon" href="images/tab's-Icons/appointments.png">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--NavBar-->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Art Dent Clinic Logo">
+            </a>
+            <nav class="navbar">
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#doctors">Doctors</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-buttons">
+                <a href="appointment.html" class="header-button">Book Appointment</a>
+                <a href="https://wa.me/201055727370" target="_blank" rel="noopener noreferrer"
+                    class="header-button whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--====================-->
+    <section class="appoint-page">
+        <div class="container">
+            <div class="appoint-heading">
+                <span class="appoint-subtitle">Book Your Visit</span>
+                <h1>Your Smile Starts <span>Here.</span></h1>
+                <p>Schedule your appointment with one of our experienced
+                    doctors and take the first step toward a healthier,
+                    more confident smile.
+                </p>
+            </div>
+
+            <div class="appoint-content">
+                <div class="appoint-info">
+                    <span class="info-number">01</span>
+                    <h2> Let us take care<span>of your smile.</span></h2>
+                    <p>At Art Dent, we believe that every patient deserves
+                        personalized dental care in a comfortable and
+                        welcoming environment.</p>
+                    <div class="appoint-features">
+                        <div class="appoint-feature">
+                            <div class="feature-icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <h3>Flexible Appointments</h3>
+                                <p> Choose a date and time that works for you.</p>
+                            </div>
+                        </div>
+
+                        <div class="appoint-feature">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+
+                            <div>
+                                <h3>Experienced Doctors</h3>
+                                <p>Professional care from our dental specialists.</p>
+                            </div>
+                        </div>
+
+                        <div class="appoint-feature">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-shield-heart"></i>
+                            </div>
+
+                            <div>
+                                <h3>Personalized Care</h3>
+                                <p>Treatment plans designed around your needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="appoint-feature">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+
+                            <div>
+                                <h3>Complete Dental Care</h3>
+                                <p>A wide range of dental services in one place</p>
+                            </div>
+                        </div>
+
+                        <div class="appoint-feature">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-x-ray"></i>
+                            </div>
+
+                            <div>
+                                <h3>Modern Technology</h3>
+                                <p>Advanced equipment for accurate diagnosis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appoint-form-wrapper">
+                    <form class="appoint-form" id="appointmentForm">
+                        <div class="form-title">
+                            <span>Make An Appointment</span>
+                            <h2>Book Your Visit</h2>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" name="name" id="name" required
+                                    placeholder="Please Write Your Full Name.">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" required
+                                    placeholder="Please Write Your Phone Number.">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="whatsapp-number">WhatsApp Number</label>
+                                <input type="tel" name="whatsapp-number" id="whatsapp-number" required
+                                    placeholder="Please Write Available WhatsApp Number.">
+                            </div>
+                            <div class="form-group">
+                                <label for="doctor">Doctor</label>
+                                <select id="doctor" name="doctor">
+                                    <option value="" selected disabled>Select Doctor</option>
+                                    <option value="mahmoud">Dr. Mahmoud Elsharkawy</option>
+                                    <option value="mo-abdallah">Dr. Mohamed Abdallah</option>
+                                    <option value="sahar">Dr. Sahar Hussein</option>
+                                    <option value="mo-reda">Dr. Mohamed Reda</option>
+                                    <option value="mo-alimam">Dr. Mohamed Al-Imam</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Service</label>
+                                <select id="service" name="service">
+                                    <option value="" selected disabled>Select Service</option>
+                                    <option value="general">General Dental Care</option>
+                                    <option value="fillings">Dental Fillings</option>
+                                    <option value="implants">Dental Implants</option>
+                                    <option value="prosthodontics">Prosthodontics</option>
+                                    <option value="paediatrics">Paediatrics</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="package">Package</label>
+                                <select id="package" name="package">
+                                    <option value="" selected disabled>Select Package</option>
+                                    <option value="basic">Basic Dental Care</option>
+                                    <option value="complete">Complete Dental Care</option>
+                                    <option value="family">Family Dental Package</option>
+                                    <option value="none">None</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="" selected disabled>Select Time</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">01:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                    <option value="18:00">06:00 PM</option>
+                                    <option value="19:00">07:00 PM</option>
+                                    <option value="20:00">08:00 PM</option>
+                                    <option value="21:00">09:00 PM</option>
+                                    <option value="22:00">10:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us anything we should know..."></textarea>
+                        </div>
+
+                        <button type="submit" class="appoint-submit">
+                            Book Appointment
+                            <i class="fa-regular fa-circle-check"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/201055727370" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="Contact us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+</body>
+
+</html>

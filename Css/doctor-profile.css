@@ -1,0 +1,311 @@
+.doc-profile {
+    background-color: var(--white-color);
+    padding: 100px 0;
+}
+
+.doc-profile-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.doc-card {
+    background-color: var(--section-background);
+    border-radius: 10px;
+    position: sticky;
+    top: 100px;
+    overflow: hidden;
+}
+
+.doc-img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+}
+
+.doc-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.doc-card:hover .doc-img img {
+    transform: scale(1.03);
+}
+
+.doc-info {
+    padding: 25px 25px 20px;
+}
+
+.doc-info h1 {
+    color: var(--dark-color);
+    margin: 0 0 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.doctor-specialty {
+    color: var(--main-color);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.doc-schedule {
+    padding: 0 25px 25px;
+}
+
+.sch-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    gap: 14px;
+    border-top: 1px solid rgba(62, 39, 35, 0.12);
+}
+
+.sch-item i {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.sch-item span {
+    display: block;
+    color: var(--main-color);
+    margin-bottom: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sch-item p {
+    color: var(--dark-color);
+    font-size: 14px;
+    margin: 0;
+}
+
+.doc-book-btn {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    padding: 13px 18px;
+    margin: 0 25px 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: var(--main-duration);
+}
+
+.doc-book-btn i {
+    font-size: 11px;
+    transition: var(--main-duration);
+}
+
+.doc-book-btn:hover {
+    background-color: var(--dark-color);
+}
+
+.doc-book-btn:hover i {
+    transform: translateX(5px);
+}
+
+.doc-information {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.doc-info-box {
+    background-color: var(--section-background);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.box-heading {
+    margin-bottom: 20px;
+}
+
+.box-heading>span,
+.cases-heading>span {
+    display: block;
+    color: var(--main-color);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.box-heading h2 {
+    color: var(--dark-color);
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.biography p {
+    color: var(--text-color);
+    max-width: 850px;
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.doc-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.doc-list li {
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 1px solid rgba(62, 39, 35, 0.1);
+}
+
+.doc-list li:first-child {
+    border-top: none;
+}
+
+.doc-list i {
+    color: var(--main-color);
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.doc-cases {
+    margin-top: 15px;
+}
+
+.cases-heading {
+    margin-bottom: 25px;
+}
+
+.cases-heading h2 {
+    color: var(--dark-color);
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+.cases-heading h2 strong {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.cases-heading p {
+    color: var(--text-color);
+    font-size: 13px;
+    margin: 0;
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.case-card {
+    background-color: var(--section-background);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: var(--main-duration);
+}
+
+.case-card:hover {
+    transform: translateY(-6px);
+}
+
+.case-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    aspect-ratio: 2 / 1;
+}
+
+.case-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.case-img:first-child {
+    border-right: 2px solid var(--white-color);
+}
+
+.case-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.case-card:hover .case-img img {
+    transform: scale(1.04);
+}
+
+.case-img span {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 5px 10px;
+    z-index: 2;
+}
+
+.case-content {
+    padding: 20px;
+}
+
+.case-content>span {
+    color: var(--main-color);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.case-content h3 {
+    color: var(--dark-color);
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 7px 0 5px;
+}
+
+.case-content p {
+    color: var(--text-color);
+    font-size: 12px;
+    margin: 0;
+}
