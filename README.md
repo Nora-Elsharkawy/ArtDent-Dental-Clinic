@@ -11,7 +11,6 @@ A modern and responsive dental clinic website designed to provide a professional
 - Online appointment page
 - Digital dentistry and technology section
 - Clinic information
-- Gallery
 - WhatsApp contact integration
 - Mobile-friendly layout
 
@@ -19,8 +18,12 @@ A modern and responsive dental clinic website designed to provide a professional
 
 - HTML5
 - CSS3
+- CSS Flexbox
+- CSS Grid
 - Font Awesome
 - Google Fonts
+- Media Queries
+- Responsivness
 
 ## 📁 Project Structure
 
@@ -31,12 +34,7 @@ Art-Dent-Clinic/
 ├── about.html
 ├── appointment.html
 ├── doctor-profile.html
-│
-├── services/
-│   ├── teeth-whitening.html
-│   ├── dental-implants.html
-│   ├── orthodontics.html
-│   └── smile-makeover.html
+├── services.html
 │
 ├── Css/
 │   ├── homepage.css
@@ -45,6 +43,5 @@ Art-Dent-Clinic/
 │   ├── doctor-profile.css
 │   └── ...
 │
-├── Js/
 │
 └── images/
