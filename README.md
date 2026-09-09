@@ -19,7 +19,6 @@ A modern and responsive dental clinic website designed to provide a professional
 
 - HTML5
 - CSS3
-- JavaScript
 - Font Awesome
 - Google Fonts
 
